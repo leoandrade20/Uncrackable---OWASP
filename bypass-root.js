@@ -1,21 +1,22 @@
-console.log("Bypassando o Anti-Root do Uncrackable1 do OWASP...");
+console.log("Bypass Anti-Root Uncrackable1 OWASP...");
 
 Java.perform(function() {
 
+    //jadx was used for static analysis
     var c = Java.use("sg.vantagepoint.a.c");
 
     c.a.implementation = function() {
-        console.log("Returning 'false' to C0002c.m2a() call...");
+        console.log("Returning 'false' to c.a() call...");
         return false;
     }
 
     c.b.implementation = function() {
-        console.log("Returning 'false' to C0002c.m2b() call...");
+        console.log("Returning 'false' to c.b() call...");
         return false;
     }
 
     c.c.implementation = function() {
-        console.log("Returning 'false' to C0002c.m4c() call...");
+        console.log("Returning 'false' to c.c() call...");
         return false;
     }
 });
